@@ -24,17 +24,20 @@ export default {
       todos: [
         {
           id: 1,
-          title: "Todo One",
+          title: "Airpods Pro",
+          prijs: "230",
           completed: false
         },
         {
           id: 2,
-          title: "Todo Two",
+          title: "Nieuwe auto",
+          prijs: "1000",
           completed: false
         },
         {
           id: 3,
-          title: "Todo Three",
+          title: "Chocola",
+          prijs: "5",
           completed: false
         }
       ]

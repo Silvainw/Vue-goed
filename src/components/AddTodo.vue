@@ -1,7 +1,8 @@
 <template>
   <div>
     <form @submit="addTodo">
-      <input type="text" v-model="title" name="title" placeholder="Add Todo...">
+      <input type="text" v-model="title" name="title" placeholder="Voeg nieuwe wens toe...">
+      <input type="text" v-model="prijs" name="prijs" placeholder="Prijs">
       <input type="submit" value="Submit" class="btn">
     </form>
   </div>
@@ -13,7 +14,8 @@
     name: "AddTodo",
     data() {
       return {
-        title: ''
+        title: '',
+        prijs: ''
       }
     },
     methods: {
@@ -22,12 +24,14 @@
         const newTodo = {
           id: uuid.v4(),
           title: this.title,
+          prijs: this.prijs,
           completed: false
         }
         //send up to parent
         this.$emit('add-todo', newTodo);
 
         this.title = '';
+        this.prijs= '';
       }
     }
   }
