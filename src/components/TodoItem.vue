@@ -1,12 +1,12 @@
 <template>
   <div class="todo-item" v-bind:class=" {'is-complete':todo.completed}">
-    <p>
+    <p> <br>
       <input type="checkbox" v-on:change="markComplete">
       {{todo.title}},<br>
       {{todo.beschrijfing}}.<br>
       <img :src="todo.foto" :alt="todo.title"><br>
-      € {{todo.prijs}}.
-      <button @click="$emit('del-todo', todo.id)" class="del">x</button>
+      € {{todo.prijs}}.<br>
+      <button @click="$emit('del-todo', todo.id)" class="del">Verwijder</button><br>
     </p>
   </div>
 </template>
@@ -38,8 +38,9 @@
     background: #ff0000;
     color: #fff;
     border: none;
-    padding: 5px 9px;
-    border-radius: 50%;
+    padding: 5px 60px;
+    margin-right: 44%;
+    border-radius: 5%;
     cursor: pointer;
     float: right;
   }
