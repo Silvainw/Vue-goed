@@ -40,6 +40,14 @@ export default {
         },
         {
           id: 3,
+          title: "Iphone 11",
+          beschrijfing: "Nieuwe telefoon, oude is kapot",
+          prijs: "1600",
+          foto: "https://www02.cp-static.com/objects/high_pic/7/764/1351040479_smartphones-apple-iphone-11-64-gb-black-mwlt2zd-a.jpg",
+          completed: false
+        },
+        {
+          id: 4,
           title: "Chocola",
           beschrijfing: "Heel erg lekker",
           prijs: "5",
@@ -75,13 +83,17 @@ body {
 .btn{
   display: inline-block;
   border: none;
-  background: #555;
+  background: #E10A0A;
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
 }
 
 .btn:hover{
-  background: #666;
+  background: #E83E3E;
+}
+
+#app {
+  text-align: center;
 }
 </style>

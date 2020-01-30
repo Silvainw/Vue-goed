@@ -2,10 +2,10 @@
   <div class="todo-item" v-bind:class=" {'is-complete':todo.completed}">
     <p>
       <input type="checkbox" v-on:change="markComplete">
-      {{todo.title}},
-      {{todo.prijs}} $. <br>
-      <img :src="todo.foto" :alt="todo.title"> <br>
-      {{todo.beschrijfing}}
+      {{todo.title}},<br>
+      {{todo.beschrijfing}}.<br>
+      <img :src="todo.foto" :alt="todo.title"><br>
+      € {{todo.prijs}}.
       <button @click="$emit('del-todo', todo.id)" class="del">x</button>
     </p>
   </div>
@@ -25,9 +25,9 @@
 
 <style scoped>
   .todo-item {
-    background: #f4f4f4;
+    background: #F7D4D4;
     padding: 10px;
-    border-bottom: 1px #ccc dotted;
+    border-bottom: 1px #000 solid;
   }
 
   .is-complete {

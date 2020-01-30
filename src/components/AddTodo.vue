@@ -1,10 +1,10 @@
 <template>
   <div>
     <form @submit="addTodo">
-      <input type="text" v-model="title" name="title" placeholder="Voeg nieuwe wens toe...">
-      <input type="text" v-model="prijs" name="prijs" placeholder="Prijs">
-      <input type="text" v-model="beschrijfing" name="beschrijfing" placeholder="Beschrijfing">
-      <input type="text" v-model="foto" name="foto" placeholder="Link Foto">
+      <input type="text" v-model="title" name="title" placeholder="Voeg nieuwe wens toe..." class="kleur">
+      <input type="text" v-model="prijs" name="prijs" placeholder="Prijs" class="kleur">
+      <input type="text" v-model="beschrijfing" name="beschrijfing" placeholder="Beschrijfing" class="kleur">
+      <input type="text" v-model="foto" name="foto" placeholder="Link Foto" class="kleur">
       <input type="submit" value="Submit" class="btn">
     </form>
   </div>
@@ -57,5 +57,9 @@
 
   input[type="submit"] {
     flex: 2;
+  }
+
+  .kleur {
+    background-color: #FEE8E8;
   }
 </style>
