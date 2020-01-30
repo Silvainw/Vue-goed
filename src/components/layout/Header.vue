@@ -1,6 +1,6 @@
 <template >
   <header class="header">
-    <h1>Wensen lijst </h1>
+    <h1>Verlang lijst </h1>
   </header>
 </template>
 

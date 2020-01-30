@@ -3,6 +3,8 @@
     <form @submit="addTodo">
       <input type="text" v-model="title" name="title" placeholder="Voeg nieuwe wens toe...">
       <input type="text" v-model="prijs" name="prijs" placeholder="Prijs">
+      <input type="text" v-model="beschrijfing" name="beschrijfing" placeholder="Beschrijfing">
+      <input type="text" v-model="foto" name="foto" placeholder="Link Foto">
       <input type="submit" value="Submit" class="btn">
     </form>
   </div>
@@ -15,7 +17,9 @@
     data() {
       return {
         title: '',
-        prijs: ''
+        prijs: '',
+        beschrijfing: '',
+        foto: ''
       }
     },
     methods: {
@@ -25,6 +29,8 @@
           id: uuid.v4(),
           title: this.title,
           prijs: this.prijs,
+          beschrijfing: this.beschrijfing,
+          foto: this.foto,
           completed: false
         }
         //send up to parent
@@ -32,6 +38,8 @@
 
         this.title = '';
         this.prijs= '';
+        this.beschrijfing= '';
+        this.foto= '';
       }
     }
   }

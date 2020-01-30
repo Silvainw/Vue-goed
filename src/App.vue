@@ -25,19 +25,25 @@ export default {
         {
           id: 1,
           title: "Airpods Pro",
+          beschrijfing: "Beter geluids kwaliteid",
           prijs: "230",
+          foto: "https://s.s-bol.com/imgbase0/imagebase3/large/FC/7/4/1/9/9200000123229147.jpg",
           completed: false
         },
         {
           id: 2,
           title: "Nieuwe auto",
+          beschrijfing: "Zodat ik rond kan rijden",
           prijs: "1000",
+          foto: "https://autorai.nl/wp-content/uploads/2017/06/Volkswagen-Polo-2018-1600-03-640x480.jpg",
           completed: false
         },
         {
           id: 3,
           title: "Chocola",
+          beschrijfing: "Heel erg lekker",
           prijs: "5",
+          foto: "https://sugarfreelondoner.com/wp-content/uploads/2019/05/keto-milk-chocolate.jpg",
           completed: false
         }
       ]
