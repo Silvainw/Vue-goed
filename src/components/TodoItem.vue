@@ -1,8 +1,8 @@
 <template>
   <div class="todo-item" v-bind:class=" {'is-complete':todo.completed}">
     <p> <br>
-      <input type="checkbox" v-on:change="markComplete">
-      {{todo.title}},<br>
+      <input type="checkbox" v-on:change="markComplete"> Gekocht. <br>
+      <br>{{todo.title}},<br>
       {{todo.beschrijfing}}.<br>
       <img :src="todo.foto" :alt="todo.title"><br>
       € {{todo.prijs}}.<br>
