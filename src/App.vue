@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     deleteTodo(id) {
-      this.todo = this.todos.filter(todo => todo.id !== id);
+      this.todos = this.todos.filter(todo => todo.id !== id);
     },
     addTodo(newTodo) {
       this.todos = [...this.todos, newTodo];
