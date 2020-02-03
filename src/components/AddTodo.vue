@@ -39,7 +39,7 @@
         this.title = '';
         this.prijs= '';
         this.beschrijfing= '';
-        this.foto= '';
+        this.foto= ''
       }
     }
   }
