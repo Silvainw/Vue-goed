@@ -1,27 +1,27 @@
 <template>
   <div id="app">
     <Header />
-    <AddTodo v-on:add-todo="addTodo" />
-    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
+    <AddVerlang v-on:add-verlang="addVerlang" />
+    <Verlangen v-bind:verlangen="verlangen" v-on:del-verlang="deleteVerlang" />
   </div>
 </template>
 
 <script>
 import Header from './components/layout/Header';
-import Todos from './components/Todos';
-import AddTodo from './components/AddTodo';
+import Verlangen from './components/Verlangen';
+import AddVerlang from './components/AddVerlang';
 
 
 export default {
   name: 'app',
   components: {
     Header,
-    Todos,
-    AddTodo
+    Verlangen,
+    AddVerlang
   },
   data() {
     return{
-      todos: [
+      verlangen: [
         {
           id: 1,
           title: "Airpods Pro",
@@ -58,11 +58,11 @@ export default {
     }
   },
   methods: {
-    deleteTodo(id) {
-      this.todos = this.todos.filter(todo => todo.id !== id);
+    deleteVerlang(id) {
+      this.verlangen = this.verlangen.filter(verlang => verlang.id !== id);
     },
-    addTodo(newTodo) {
-      this.todos = [...this.todos, newTodo];
+    addVerlangen(newVerlang) {
+      this.verlangen = [...this.verlangen, newVerlang];
     }
   }
 }
